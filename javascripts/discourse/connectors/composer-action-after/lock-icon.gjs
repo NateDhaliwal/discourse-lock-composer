@@ -21,7 +21,7 @@ export default class LockIcon extends Component {
       this.toasts.success({
         duration: "short",
         data: {
-          message: i18n("composer_unlocked");
+          message: i18n("composer_unlocked")
         }
       });
     } else {
@@ -29,7 +29,7 @@ export default class LockIcon extends Component {
       this.toasts.success({
         duration: "short",
         data: {
-          message: i18n("composer_locked");
+          message: i18n("composer_locked")
         }
       });
     }
