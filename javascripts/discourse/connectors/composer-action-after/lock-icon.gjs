@@ -11,8 +11,6 @@ export default class LockIcon extends Component {
   @service toasts;
 
   get composerDisabledSubmit() {
-    // eslint-disable-next-line no-console
-    console.log(this.composer.disableSubmit);
     return this.composer.disableSubmit;
   }
 
