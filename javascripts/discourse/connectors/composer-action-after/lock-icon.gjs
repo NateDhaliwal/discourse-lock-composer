@@ -4,7 +4,7 @@ import { on } from "@ember/modifer";
 import { action } from "@ember/object";
 import { service } from "@ember/service";
 import DButton from "discourse/components/d-button";
-import { i18n } from "discourse-i18n";
+import { I18n } from "discourse-i18n";
 
 export default class LockIcon extends Component {
   @service composer;
@@ -20,13 +20,14 @@ export default class LockIcon extends Component {
       this.composer.disableSubmit = false;
       this.toasts.success({
         duration: "short",
-        data: { message: i18n("composer_unlocked_message") }
+        // eslint-disable-next-line no-undef
+        data: { message: I18n.t(themePrefix("composer_unlocked_message") }
       });
     } else {
       this.composer.disableSubmit = true;
       this.toasts.success({
         duration: "short",
-        data: { message: i18n("composer_locked_message") }
+        data: { message: I18n.t(themePrefix("composer_locked_message") }
       });
     }
   }
