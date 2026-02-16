@@ -1,5 +1,10 @@
 en:
   theme_metadata:
-    description: "TODO"
+    description: "Adds a button to the composer to lock/unlock it."
     settings:
       example_setting: "A description of a setting."
+      
+  unlock_composer_button_title: "Unlock composer"
+  lock_composer_button_title: "Lock composer"
+  composer_locked_message: "Composer locked!"
+  composer_unlocked_message: "Composer unlocked!"
