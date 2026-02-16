@@ -36,7 +36,7 @@ export default class LockIcon extends Component {
       @icon={{if this.composerDisabledSubmit "unlock" "lock"}}
       @title={{if this.composerDisabledSubmit (themePrefix "unlock_composer_button_title") (themePrefix "lock_composer_button_title")}}
       @action={{this.toggleComposerLocked}}
-      class="btn btn-icon"
+      class="btn btn-icon btn-flat"
     />
   </template>
 }
