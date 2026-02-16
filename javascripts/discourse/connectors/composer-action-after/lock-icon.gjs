@@ -4,7 +4,6 @@ import { on } from "@ember/modifer";
 import { action } from "@ember/object";
 import { service } from "@ember/service";
 import DButton from "discourse/components/d-button";
-import { I18n } from "discourse-i18n";
 
 export default class LockIcon extends Component {
   @service composer;
